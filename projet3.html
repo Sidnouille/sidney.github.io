@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nom du projet — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── Navigation (identique à index.html) ── -->
+  <nav>
+    <div class="nav-logo">Votre<span>Nom</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">À propos</a></li>
+      <li><a href="index.html#projects">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main style="padding-top: 5rem;">
+    <div class="container">
+
+      <!-- ── Bouton retour ── -->
+      <a href="index.html#projects" class="btn-back">Retour</a>
+
+      <!-- ── Image de couverture ── -->
+      <!-- Remplacez le src par votre capture d'écran principale -->
+      <img
+        src="https://placehold.co/1200x380/161616/d4a96a?text=Image+du+projet"
+        alt="Capture d'écran du projet"
+        class="project-cover"
+      />
+
+      <!-- ── En-tête : titre + boutons ── -->
+      <div class="project-header">
+        <div class="project-header-left">
+          <span class="project-tag">Application · Web Design</span>
+          <h1>Nom du projet</h1>
+        </div>
+        <div class="project-header-right">
+          <a href="https://github.com/votre-profil/projet" target="_blank" class="btn-ghost">
+            GitHub ↗
+          </a>
+          <a href="https://votre-projet.com" target="_blank" class="btn">
+            Voir le site ↗
+          </a>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- ── Corps : description + infos ── -->
+      <div class="project-body">
+
+        <!-- Description longue -->
+        <div class="project-description">
+          <p>
+            Décrivez ici le contexte et l'origine du projet. Quel problème cherchiez-vous
+            à résoudre ? Pour qui ? Quel était votre rôle dans ce projet ?
+          </p>
+
+          <!-- Screenshots secondaires -->
+          <div class="screenshots">
+            <img src="https://placehold.co/600x200/161616/2a2a2a?text=Capture+1" alt="Capture 1" />
+            <img src="https://placehold.co/600x200/161616/2a2a2a?text=Capture+2" alt="Capture 2" />
+          </div>
+        </div>
+
+        <!-- Fiche infos -->
+        <aside class="project-info">
+          <div class="info-item">
+            <span class="info-label">Année</span>
+            <span class="info-value">2025-2027</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Etablissement</span>
+            <span class="info-value">Ella Fitzgerald</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Durée</span>
+            <span class="info-value">2 ans</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Technologies</span>
+            <!-- Même liste .skills que dans index.html -->
+            <ul class="skills" style="margin-top: 0.5rem;">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- ── Autres projets ── -->
+      <section class="other-projects">
+        <h2 class="section-title">Autres projets</h2>
+        <div class="projects-grid">
+
+          <!-- Reprise des mêmes .card que dans index.html -->
+        <div class="card">
+          <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Projet+1" alt="Projet 1" />
+          <div class="card-body">
+            <span class="card-tag">Stage - Première année BTS</span>
+            <h3>MyLinks</h3>
+            <p>Retour d'experience à propos de mes missions chez MyLinks, entreprise de vidéo surveillance.</p>
+            <a href="projet1.html" class="btn btn-small">Voir le projet →</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Projet+2" alt="Projet 2" />
+          <div class="card-body">
+            <span class="card-tag">Serveur à domicile</span>
+            <h3>RasberryPi</h3>
+            <p>Un récapitulatif de mes projets réalisé sur mon rasberry pi.</p>
+            <a href="projet2.html" class="btn btn-small">Voir le projet →</a>
+          </div>
+        </div>
+
+<!-- 
+          <div class="card">
+            <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Projet+4" alt="Projet 4" />
+            <div class="card-body">
+              <span class="card-tag">Open Source</span>
+              <h3>Nom du projet</h3>
+              <p>Courte description de ce projet et des technologies utilisées.</p>
+              <a href="projet.html" class="btn btn-small">Voir le projet →</a>
+            </div>
+          </div> -->
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ── Footer (identique à index.html) ── -->
+  <footer>
+    <p>© 2026 Votre Nom — Fait avec ❤️</p>
+  </footer>
+
+</body>
+</html>
