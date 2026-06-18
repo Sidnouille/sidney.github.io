@@ -501,3 +501,253 @@ footer {
         grid-template-columns: 1fr;
       }
     }
+
+/* ══════════════════════════════════════
+   MyLinks — Styles spécifiques à la page
+   ══════════════════════════════════════ */
+
+/* Cover placeholder */
+.ml-cover-placeholder {
+  width: 100%;
+  height: 280px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, var(--surface) 0%, #1a1410 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.ml-cover-icon {
+  font-size: 3rem;
+  opacity: 0.3;
+}
+
+.ml-cover-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Section headings */
+.ml-section-heading {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2.5rem 0 1rem;
+}
+
+/* Context grid */
+.ml-context-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.ml-context-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem 1.1rem;
+}
+
+.ml-ctx-icon {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.ml-ctx-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.ml-ctx-value {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.ml-ctx-sub {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+/* Skills grid */
+.ml-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.ml-skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.2rem 1.3rem;
+  transition: border-color 0.2s;
+}
+
+.ml-skill-card:hover {
+  border-color: var(--accent);
+}
+
+.ml-skill-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.ml-skill-name {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.ml-skill-card p {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* Mission card unique */
+.ml-mission-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.4rem 1.6rem;
+  transition: border-color 0.2s;
+}
+
+.ml-mission-card:hover {
+  border-color: var(--accent);
+}
+
+.ml-mission-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.ml-mission-icon {
+  font-size: 1.1rem;
+}
+
+.ml-mission-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  flex: 1;
+}
+
+.ml-mission-date {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.ml-mission-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+  background: var(--bg);
+}
+
+.ml-mission-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.7rem;
+  line-height: 1.7;
+}
+
+.ml-mission-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.ml-mission-card p strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Tags */
+.ml-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.ml-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  padding: 0.22rem 0.6rem;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* Bilan box */
+.ml-bilan-box {
+  background: linear-gradient(135deg, rgba(212, 169, 106, 0.06), rgba(212, 169, 106, 0.02));
+  border: 1px solid rgba(212, 169, 106, 0.25);
+  border-radius: 4px;
+  padding: 1.4rem 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.ml-bilan-box p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.ml-bilan-box p:last-child {
+  margin-bottom: 0;
+}
+
+.ml-bilan-box p strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Responsive MyLinks */
+@media (max-width: 900px) {
+  .ml-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .ml-cover-placeholder {
+    height: 180px;
+  }
+
+  .ml-context-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ml-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

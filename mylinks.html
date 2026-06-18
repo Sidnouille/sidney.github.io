@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nom du projet — Portfolio</title>
+  <title>MyLinks — Stage BTS SIO SISR</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ── Navigation (identique à index.html) ── -->
   <nav>
-    <div class="nav-logo">Votre<span>Nom</span></div>
+    <div class="nav-logo">Sidney<span>.</span></div>
     <ul class="nav-links">
       <li><a href="index.html#about">À propos</a></li>
       <li><a href="index.html#projects">Projets</a></li>
@@ -23,58 +22,178 @@
   <main style="padding-top: 5rem;">
     <div class="container">
 
-      <!-- ── Bouton retour ── -->
-      <a href="index.html#projects" class="btn-back">Retour</a>
+      <a href="index.html#projects" class="btn-back">Retour aux projets</a>
 
-      <!-- ── Image de couverture ── -->
-      <!-- Remplacez le src par votre capture d'écran principale -->
-      <img
-        src="img\male-electrician-works-switchboard-overalls-against-backdrop-emergency-lighting.jpg"
-        alt="Capture d'écran du projet"
-        class="project-cover"
-      />
+      <!-- Cover -->
+      <div class="ml-cover-placeholder">
+        <span class="ml-cover-icon">📷</span>
+        <span class="ml-cover-label">My Links — Sécurité électronique · Chasse-sur-Rhône</span>
+      </div>
 
-      <!-- ── En-tête : titre + boutons ── -->
+      <!-- Header -->
       <div class="project-header">
         <div class="project-header-left">
-          <span class="project-tag">Stage - Première année BTS</span>
-          <h1>MyLinks</h1>
+          <span class="project-tag">Stage — BTS SIO SISR · 1re année</span>
+          <h1>Stage chez<br/>My Links</h1>
         </div>
         <div class="project-header-right">
-          <a href="https://www.my-links.fr/" target="_blank" class="btn">
-            Site de MyLinks
-          </a>
+          <a href="https://www.my-links.fr/" target="_blank" class="btn">Site de My Links ↗</a>
         </div>
       </div>
 
       <hr class="divider" />
 
-      <!-- ── Corps : description + infos ── -->
+      <!-- Body -->
       <div class="project-body">
 
-        <!-- Description longue -->
         <div class="project-description">
+
+          <!-- Entreprise -->
+          <p class="ml-section-heading">L'entreprise</p>
           <p>
-            Décrivez ici le contexte et l'origine du projet. Quel problème cherchiez-vous
-            à résoudre ? Pour qui ? Quel était votre rôle dans ce projet ?
-          </p>
-          <p>
-            Parlez des choix techniques ou créatifs importants que vous avez faits,
-            des défis rencontrés et comment vous les avez surmontés.
-          </p>
-          <p>
-            Terminez par les résultats ou l'impact du projet : métriques, retours
-            utilisateurs, ou simplement ce que vous en avez appris.
+            My Links est une <strong>SARL spécialisée en sécurité électronique</strong>, basée à Chasse-sur-Rhône (69).
+            Elle installe, met en service et maintient des systèmes de vidéosurveillance pour de grands comptes industriels —
+            PAPREC, SUEZ, bioMérieux — avec des parcs pouvant atteindre plusieurs milliers de caméras par site.
           </p>
 
-          <!-- Screenshots secondaires -->
-          <div class="screenshots">
-            <img src="https://placehold.co/600x200/161616/2a2a2a?text=Capture+1" alt="Capture 1" />
-            <img src="https://placehold.co/600x200/161616/2a2a2a?text=Capture+2" alt="Capture 2" />
+          <!-- Contexte cards -->
+          <p class="ml-section-heading">Contexte du stage</p>
+          <div class="ml-context-grid">
+            <div class="ml-context-card">
+              <div class="ml-ctx-icon">🏢</div>
+              <div class="ml-ctx-label">Entreprise</div>
+              <div class="ml-ctx-value">My Links</div>
+              <div class="ml-ctx-sub">SARL · Chasse-sur-Rhône (69)</div>
+            </div>
+            <div class="ml-context-card">
+              <div class="ml-ctx-icon">⚡</div>
+              <div class="ml-ctx-label">Secteur</div>
+              <div class="ml-ctx-value">Vidéosurveillance</div>
+              <div class="ml-ctx-sub">Installation · Maintenance · Mise en service</div>
+            </div>
+            <div class="ml-context-card">
+              <div class="ml-ctx-icon">📅</div>
+              <div class="ml-ctx-label">Période</div>
+              <div class="ml-ctx-value">Mai – Juin 2026</div>
+              <div class="ml-ctx-sub">Stage de 1re année BTS SIO SISR</div>
+            </div>
           </div>
+
+          <!-- Compétences acquises -->
+          <p class="ml-section-heading">Compétences acquises</p>
+          <div class="ml-skills-grid">
+
+            <div class="ml-skill-card">
+              <div class="ml-skill-icon">🗂️</div>
+              <div class="ml-skill-name">Documentation réseau</div>
+              <p>Capable de cartographier et maintenir l'analyse fonctionnelle d'un SI : adressage IP, adresses MAC, ports switch, références équipements. Je sais naviguer un réseau inconnu de switch en switch pour le mettre sur papier.</p>
+              <div class="ml-tag-row">
+                <span class="ml-tag">IP Scanner</span>
+                <span class="ml-tag">SSH</span>
+                <span class="ml-tag">Excel</span>
+              </div>
+            </div>
+
+            <div class="ml-skill-card">
+              <div class="ml-skill-icon">📡</div>
+              <div class="ml-skill-name">Paramétrage de caméras IP</div>
+              <p>Maîtrise de la configuration complète d'une caméra avant déploiement : adressage IP, horodatage NTP, réglage des flux vidéo (thermique, jour/nuit, compression) et activation de la norme ONVIF.</p>
+              <div class="ml-tag-row">
+                <span class="ml-tag">HiTools Delivery</span>
+                <span class="ml-tag">NTP</span>
+                <span class="ml-tag">ONVIF</span>
+                <span class="ml-tag">Caméras thermiques</span>
+              </div>
+            </div>
+
+            <div class="ml-skill-card">
+              <div class="ml-skill-icon">🖥️</div>
+              <div class="ml-skill-name">Montage de serveurs</div>
+              <p>Capable de monter un serveur backplane de A à Z en autonomie : châssis, alimentation redondante, carte mère, câblage RAID 5 via SAS, puis installation de l'OS et des logiciels de gestion.</p>
+              <div class="ml-tag-row">
+                <span class="ml-tag">Backplane</span>
+                <span class="ml-tag">RAID 5</span>
+                <span class="ml-tag">SAS / SFF-8643</span>
+                <span class="ml-tag">Maxwell</span>
+              </div>
+            </div>
+
+            <div class="ml-skill-card">
+              <div class="ml-skill-icon">🔧</div>
+              <div class="ml-skill-name">Maintenance &amp; SAV</div>
+              <p>Diagnostic et résolution de pannes matérielles : identification d'un câble PoE/RJ45 oxydé, test d'alarme thermique au multimètre, réinitialisation d'équipements. Rédaction de fiches d'intervention.</p>
+              <div class="ml-tag-row">
+                <span class="ml-tag">PoE / RJ45</span>
+                <span class="ml-tag">Multimètre</span>
+                <span class="ml-tag">Caméra thermique</span>
+              </div>
+            </div>
+
+            <div class="ml-skill-card">
+              <div class="ml-skill-icon">📺</div>
+              <div class="ml-skill-name">VMS Milestone XProtect</div>
+              <p>Utilisation de Milestone XProtect Management pour retrouver les numéros de série, noms et informations des caméras sur un parc existant, dans le cadre de la mise à jour des AF.</p>
+              <div class="ml-tag-row">
+                <span class="ml-tag">Milestone XProtect</span>
+                <span class="ml-tag">NVR</span>
+              </div>
+            </div>
+
+            <div class="ml-skill-card">
+              <div class="ml-skill-icon">🔒</div>
+              <div class="ml-skill-name">Administration réseau</div>
+              <p>Navigation en autonomie dans des infrastructures réseau complexes : switches HTTP et SSH, configuration OMADA, bornes Wi-Fi, centrales d'alarme SPC, câbles DAC en ligne de commande.</p>
+              <div class="ml-tag-row">
+                <span class="ml-tag">SSH</span>
+                <span class="ml-tag">OMADA</span>
+                <span class="ml-tag">Centrale SPC</span>
+                <span class="ml-tag">DAC</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Mission BUT -->
+          <p class="ml-section-heading">Mission marquante — Entrepôt BUT</p>
+          <div class="ml-mission-card">
+            <div class="ml-mission-header">
+              <span class="ml-mission-icon">🗺️</span>
+              <span class="ml-mission-title">Refonte complète de l'analyse fonctionnelle</span>
+              <span class="ml-mission-date">Semaine 3 · Juin 2026</span>
+            </div>
+            <img src="https://placehold.co/800x200/161616/d4a96a?text=Entrepôt+BUT+—+~300+équipements+·+23+switches" alt="Réseau entrepôt BUT" class="ml-mission-img" />
+            <p>
+              L'AF existante du site BUT comportait de nombreux trous : adresses MAC manquantes, ports switch non renseignés, mots de passe perdus — pour environ 300 équipements dont ~200 caméras, répartis sur deux entrepôts.
+            </p>
+            <p>
+              <strong>Démarche :</strong> Transvasement des données dans une nouvelle AF vierge, connexion à distance au serveur, scan IP complet. Puis visite port par port de 23 switches (HTTP, SSH pour ceux sans interface web) pour relier chaque adresse MAC à son équipement. Milestone XProtect pour retrouver les numéros de série des caméras.
+            </p>
+            <p>
+              <strong>Résultat :</strong> AF complète et à jour. Au passage, découverte d'équipements méconnus — contrôleurs d'accès, interphones, boîtiers d'alarme — et résolution de l'enquête sur les mots de passe perdus.
+            </p>
+            <div class="ml-tag-row">
+              <span class="ml-tag">IP Scanner</span>
+              <span class="ml-tag">SSH</span>
+              <span class="ml-tag">Milestone XProtect</span>
+              <span class="ml-tag">23 switches</span>
+              <span class="ml-tag">~300 équipements</span>
+            </div>
+          </div>
+
+          <!-- Bilan -->
+          <p class="ml-section-heading">Bilan</p>
+          <div class="ml-bilan-box">
+            <p>
+              Ce stage m'a permis de <strong>travailler en autonomie sur une infrastructure réelle</strong>, en intervenant aussi bien sur la documentation réseau que sur le matériel physique.
+            </p>
+            <p>
+              J'ai découvert et maîtrisé des équipements que je ne connaissais pas : serveurs backplane, cartes RAID, caméras thermiques, centrales d'alarme SPC. Ce que j'ai aimé le plus : <strong>parcourir un réseau inconnu comme une enquête</strong>, identifier des équipements, résoudre des problèmes concrets. C'est la direction que je veux donner à ma carrière.
+            </p>
+          </div>
+
         </div>
 
-        <!-- Fiche infos -->
+        <!-- Aside -->
         <aside class="project-info">
           <div class="info-item">
             <span class="info-label">Année</span>
@@ -82,71 +201,84 @@
           </div>
           <div class="info-item">
             <span class="info-label">Rôle</span>
-            <span class="info-value">Technicienne</span>
+            <span class="info-value">Stagiaire technicienne réseau &amp; infrastructure</span>
           </div>
           <div class="info-item">
             <span class="info-label">Durée</span>
-            <span class="info-value">6 semaines</span>
+            <span class="info-value">~5 semaines</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Technologies</span>
-            <!-- Même liste .skills que dans index.html -->
-            <ul class="skills" style="margin-top: 0.5rem;">
-              <li>HiTools</li>
-              <li>BackPlane</li>
-              <li>.</li>
-              <li>.</li>
+            <span class="info-label">Localisation</span>
+            <span class="info-value">Chasse-sur-Rhône (69)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Formation</span>
+            <span class="info-value">BTS SIO option SISR<br/>Lycée Ella Fitzgerald</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Outils &amp; Technologies</span>
+            <ul class="skills">
+              <li>Milestone XProtect</li>
+              <li>HiTools Delivery</li>
+              <li>IP Scanner</li>
+              <li>pfSense</li>
+              <li>Proxmox VE</li>
+              <li>OMADA</li>
+              <li>Maxwell</li>
+              <li>SSH</li>
+              <li>NTP / ONVIF</li>
+              <li>RAID 5</li>
+              <li>NVR</li>
+              <li>Dolibarr</li>
+              <li>PRTG</li>
+              <li>Windows 11</li>
+              <li>Excel</li>
+            </ul>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Infra client</span>
+            <ul class="skills">
+              <li>Switches Ubiquiti</li>
+              <li>Switches Planet</li>
+              <li>TP-Link AP</li>
+              <li>Freebox WAN</li>
+              <li>VPS Ionos (VPN)</li>
             </ul>
           </div>
         </aside>
 
       </div>
 
-      <!-- ── Autres projets ── -->
+      <!-- Autres projets -->
       <section class="other-projects">
         <h2 class="section-title">Autres projets</h2>
         <div class="projects-grid">
-
-          <!-- Reprise des mêmes .card que dans index.html -->
-        <div class="card">
-          <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Projet+2" alt="Projet 2" />
+          <div class="card">
+            <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Raspberry+Pi" alt="Projet Raspberry Pi" />
             <div class="card-body">
               <span class="card-tag">Serveur à domicile</span>
-              <h3>RasberryPi</h3>
-              <p>Un récapitulatif de mes projets réalisé sur mon rasberry pi.</p>
+              <h3>Raspberry Pi</h3>
+              <p>Un récapitulatif de mes projets réalisés sur mon Raspberry Pi.</p>
               <a href="projet2.html" class="btn btn-small">Voir le projet →</a>
             </div>
-        </div>
-
+          </div>
           <div class="card">
-            <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Projet+3" alt="Projet 3" />
+            <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Projets+Ecole" alt="Projets d'école" />
             <div class="card-body">
-              <span class="card-tag">BTS SIO [SISR]</span>
-              <h3>Projets d'Ecole</h3>
-              <p>Un récapitulatif de mes projets réalisé dans le cadre scolaire.</p>
+              <span class="card-tag">BTS SIO SISR</span>
+              <h3>Projets d'école</h3>
+              <p>Un récapitulatif de mes projets réalisés dans le cadre scolaire.</p>
               <a href="projet3.html" class="btn btn-small">Voir le projet →</a>
             </div>
           </div>
-<!-- 
-          <div class="card">
-            <img src="https://placehold.co/600x360/1a1a1a/d4a96a?text=Projet+4" alt="Projet 4" />
-            <div class="card-body">
-              <span class="card-tag">Open Source</span>
-              <h3>Nom du projet</h3>
-              <p>Courte description de ce projet et des technologies utilisées.</p>
-              <a href="projet.html" class="btn btn-small">Voir le projet →</a>
-            </div>
-          </div> -->
-
         </div>
       </section>
 
     </div>
   </main>
 
-  <!-- ── Footer (identique à index.html) ── -->
   <footer>
-    <p>© 2026 Votre Nom — Fait avec ❤️</p>
+    <p>© 2026 Gomes Sidney — Portfolio BTS SIO SISR</p>
   </footer>
 
 </body>
