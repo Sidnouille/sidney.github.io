@@ -751,3 +751,107 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ══════════════════════════════════════
+   Galerie photos — MyLinks
+   ══════════════════════════════════════ */
+
+.ml-gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.ml-gallery-track-wrap {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  height: 340px;
+}
+
+.ml-gallery-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ml-gallery-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ml-gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.ml-gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+  letter-spacing: 0.04em;
+}
+
+.ml-gallery-btn {
+  flex-shrink: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s;
+  align-self: center;
+}
+
+.ml-gallery-btn:hover {
+  border-color: var(--accent);
+  background: var(--bg);
+}
+
+.ml-gallery-dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.ml-gallery-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.ml-gallery-dot.active {
+  background: var(--accent);
+}
+
+@media (max-width: 650px) {
+  .ml-gallery-track-wrap {
+    height: 220px;
+  }
+}

@@ -26,7 +26,8 @@
 
       <!-- Cover -->
       <div class="ml-cover-placeholder">
-        <img src="img\young-man-engineer-making-program-analyses.jpg" class="project-cover" />
+        <span class="ml-cover-icon">📷</span>
+        <span class="ml-cover-label">My Links — Sécurité électronique · Chasse-sur-Rhône</span>
       </div>
 
       <!-- Header -->
@@ -119,8 +120,8 @@
             <div class="ml-skill-card">
               <div class="ml-skill-icon">🔧</div>
               <div class="ml-skill-name">Premiers gestes de maintenance</div>
-                <p>J'ai participé à des retours SAV simples : tester des cables (PoE,RJ45,DAC..), réinitialiser caméras,shuttle,serveurs... rédiger une fiche d'intervention post-SAV. J'ai aussi observé des interventions plus complexes sur chantier : changement de coffrets et de cartes d'extension SPC, raccordement Onduleur..
-                <div class="ml-tag-row">
+              <p>J'ai participé à des retours SAV simples : tester un câble PoE oxydé, réinitialiser une caméra, rédiger une fiche d'intervention. J'ai aussi observé des interventions plus complexes — comme le remplacement d'un coffret SPC — sans les réaliser moi-même.</p>
+              <div class="ml-tag-row">
                 <span class="ml-tag">PoE / RJ45</span>
                 <span class="ml-tag">Multimètre</span>
                 <span class="ml-tag">Caméra thermique</span>
@@ -134,7 +135,7 @@
           <div class="ml-mission-card">
             <div class="ml-mission-header">
               <span class="ml-mission-icon">🗺️</span>
-              <span class="ml-mission-title">Refonte complète d'une analyse fonctionnelle</span>
+              <span class="ml-mission-title">Refonte complète de l'analyse fonctionnelle</span>
               <span class="ml-mission-date">Semaine 3 · Juin 2026</span>
             </div>
             <img src="https://placehold.co/800x200/161616/d4a96a?text=Entrepôt+BUT+—+~300+équipements+·+23+switches" alt="Réseau entrepôt BUT" class="ml-mission-img" />
@@ -160,12 +161,72 @@
           <p class="ml-section-heading">Bilan</p>
           <div class="ml-bilan-box">
             <p>
-              Ce stage m'a surtout permis de découvrir à quoi ressemble le terrain : des infrastructures réelles, des équipements variés, et des tâches concrètes à accomplir. J'ai travaillé en autonomie sur des missions bien délimitées, en apprenant à me débrouiller avec la documentation disponible.
+              Ce stage m'a surtout permis de <strong>découvrir à quoi ressemble le terrain</strong> : des infrastructures réelles, des équipements variés, et des tâches concrètes à accomplir. J'ai travaillé en autonomie sur des missions bien délimitées, en apprenant à me débrouiller avec la documentation disponible.
             </p>
             <p>
-              J'ai croisé des sujets que je ne connaissais pas encore — serveurs backplane, cartes RAID, caméras thermiques, centrales d'alarme — et j'en ai compris les bases. Ce que j'ai le plus apprécié : parcourir un réseau inconnu pour en faire l'inventaire (j'ai adoré!), chercher des équipements, comprendre comment tout s'articule. C'est le type de travail qui m'a donné envie d'aller plus loin.
+              J'ai croisé des sujets que je ne connaissais pas encore — serveurs backplane, cartes RAID, caméras thermiques, centrales d'alarme — et j'en ai compris les bases. Ce que j'ai le plus apprécié : <strong>parcourir un réseau inconnu pour en faire l'inventaire</strong>, chercher des équipements, comprendre comment tout s'articule. C'est le type de travail qui m'a donné envie d'aller plus loin.
             </p>
           </div>
+
+
+          <!-- Galerie photos -->
+          <p class="ml-section-heading">Photos</p>
+          <div class="ml-gallery">
+            <button class="ml-gallery-btn ml-gallery-prev" aria-label="Photo précédente">&#8592;</button>
+            <div class="ml-gallery-track-wrap">
+              <div class="ml-gallery-track">
+                <div class="ml-gallery-slide">
+                  <img src="photos/photo1.jpg" alt="Montage serveur backplane" />
+                  <span class="ml-gallery-caption">Montage serveur backplane</span>
+                </div>
+                <div class="ml-gallery-slide">
+                  <img src="photos/photo2.jpg" alt="Câblage RAID et backplane" />
+                  <span class="ml-gallery-caption">Câblage RAID et backplane</span>
+                </div>
+                <div class="ml-gallery-slide">
+                  <img src="photos/photo3.jpg" alt="Paramétrage caméras en atelier" />
+                  <span class="ml-gallery-caption">Paramétrage caméras en atelier</span>
+                </div>
+                <div class="ml-gallery-slide">
+                  <img src="photos/photo4.jpg" alt="Analyse fonctionnelle BUT" />
+                  <span class="ml-gallery-caption">Analyse fonctionnelle BUT</span>
+                </div>
+                <div class="ml-gallery-slide">
+                  <img src="photos/photo5.jpg" alt="Observation mise en service PAPREC" />
+                  <span class="ml-gallery-caption">Observation mise en service PAPREC</span>
+                </div>
+              </div>
+            </div>
+            <button class="ml-gallery-btn ml-gallery-next" aria-label="Photo suivante">&#8594;</button>
+            <div class="ml-gallery-dots"></div>
+          </div>
+          <script>
+            (function() {
+              var track = document.querySelector('.ml-gallery-track');
+              var slides = document.querySelectorAll('.ml-gallery-slide');
+              var dotsContainer = document.querySelector('.ml-gallery-dots');
+              var current = 0;
+
+              slides.forEach(function(_, i) {
+                var dot = document.createElement('button');
+                dot.className = 'ml-gallery-dot' + (i === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', 'Photo ' + (i + 1));
+                dot.addEventListener('click', function() { goTo(i); });
+                dotsContainer.appendChild(dot);
+              });
+
+              function goTo(index) {
+                current = (index + slides.length) % slides.length;
+                track.style.transform = 'translateX(-' + (current * 100) + '%)';
+                document.querySelectorAll('.ml-gallery-dot').forEach(function(d, i) {
+                  d.classList.toggle('active', i === current);
+                });
+              }
+
+              document.querySelector('.ml-gallery-prev').addEventListener('click', function() { goTo(current - 1); });
+              document.querySelector('.ml-gallery-next').addEventListener('click', function() { goTo(current + 1); });
+            })();
+          </script>
 
         </div>
 
@@ -177,7 +238,7 @@
           </div>
           <div class="info-item">
             <span class="info-label">Rôle</span>
-            <span class="info-value">Stagiaire technicienne </span>
+            <span class="info-value">Stagiaire technicienne réseau &amp; infrastructure</span>
           </div>
           <div class="info-item">
             <span class="info-label">Durée</span>
@@ -209,6 +270,16 @@
               <li>PRTG</li>
               <li>Windows 11</li>
               <li>Excel</li>
+            </ul>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Infra client</span>
+            <ul class="skills">
+              <li>Switches Ubiquiti</li>
+              <li>Switches Planet</li>
+              <li>TP-Link AP</li>
+              <li>Freebox WAN</li>
+              <li>VPS Ionos (VPN)</li>
             </ul>
           </div>
         </aside>
