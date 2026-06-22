@@ -799,9 +799,9 @@ footer {
   left: 0;
   right: 0;
   padding: 0.5rem 0.9rem;
-  font-size: 0.75rem;
-  color: var(--muted);
-  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(to top, rgba(0,0,0,3) 0%, transparent 100%);
   letter-spacing: 0.04em;
 }
 
